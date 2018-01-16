@@ -33,6 +33,10 @@ public class PruebasConWhile
         System.out.println(suma);
     }
     
+    /**
+     * Se realiza la suma de todos los valores comprendidos entre los números 
+     * introducidos como parámetros y la imprime por pantalla.
+     */
     public void sum(int num1, int num2)
     {
         int suma = 0;
@@ -45,5 +49,24 @@ public class PruebasConWhile
             num2++;
         }
         System.out.println(suma);
-    }    
+    } 
+    
+    /**
+     * Devuelve true si el número introducido como parámetro es primo, y false
+     * si no lo es.
+     */
+    public boolean isPrime(int num)
+    {
+        int contador = 2;
+        boolean aDevolver = true;
+        while (aDevolver && contador < num) {
+            if (num % contador == 0) {
+                aDevolver = false;
+            }
+            else {
+                contador++;
+            }            
+        }
+        return aDevolver;
+    }
 }
