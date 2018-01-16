@@ -8,10 +8,7 @@
 public class PruebasConWhile
 {    
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Imprime por pantalla todos los múltiplos de cinco entre 10 y 95.
      */
     public void multiplosDeCinco()
     {
@@ -20,5 +17,19 @@ public class PruebasConWhile
             System.out.println(contador);
             contador += 5;
         }
+    }
+    
+    /**
+     * Imprime por pantalla la suma de todos los valores entre 1 y 10.
+     */
+    public void sumaDeDiezNumeros()
+    {
+        int suma = 1;
+        int contador = 1;
+        while (contador <= 10) {
+            suma += contador;
+            contador++;
+        }
+        System.out.println(suma);
     }
 }
