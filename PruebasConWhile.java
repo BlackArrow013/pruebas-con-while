@@ -32,4 +32,18 @@ public class PruebasConWhile
         }
         System.out.println(suma);
     }
+    
+    public void sum(int num1, int num2)
+    {
+        int suma = 0;
+        while (num1 < num2) {
+            suma += num1;
+            num1++;
+        }
+        while (num2 < num1) {
+            suma += num2;
+            num2++;
+        }
+        System.out.println(suma);
+    }    
 }
